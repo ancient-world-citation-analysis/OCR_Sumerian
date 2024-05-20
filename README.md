@@ -59,4 +59,4 @@ Special thanks to prior OCR tools used for cuneiform extraction.
 ## Feedback and Support
 
 We welcome contributions to improve this project. Feel free to provide feedback or seek support through GitHub issues.
-```
+
