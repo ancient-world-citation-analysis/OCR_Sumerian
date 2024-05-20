@@ -60,3 +60,4 @@ Special thanks to prior OCR tools used for cuneiform extraction.
 
 We welcome contributions to improve this project. Feel free to provide feedback or seek support through GitHub issues.
 
+![sumer](https://github.com/ancient-world-citation-analysis/OCR_Sumerian/assets/79310192/c83c706f-7810-443c-bd66-78d9952f1efe)
