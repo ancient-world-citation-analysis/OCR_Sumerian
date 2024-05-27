@@ -7502,7 +7502,7 @@ a.anchor-link {
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-python"><pre><span></span><span class="kn">from</span> <span class="nn">pydrive.auth</span> <span class="kn">import</span> <span class="n">GoogleAuth</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">pydrive.auth</span> <span class="kn">import</span> <span class="n">GoogleAuth</span>
 <span class="kn">from</span> <span class="nn">pydrive.drive</span> <span class="kn">import</span> <span class="n">GoogleDrive</span>
 <span class="kn">from</span> <span class="nn">google.colab</span> <span class="kn">import</span> <span class="n">auth</span>
 <span class="kn">from</span> <span class="nn">oauth2client.client</span> <span class="kn">import</span> <span class="n">GoogleCredentials</span>
@@ -7516,10 +7516,10 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [1]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-python"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span> <span class="c1">#pandas library</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span> <span class="c1">#pandas library</span>
 <span class="kn">import</span> <span class="nn">os</span> <span class="c1">#operating system</span>
 <span class="kn">import</span> <span class="nn">json</span> <span class="c1">#json query</span>
 <span class="kn">import</span> <span class="nn">csv</span> <span class="c1">#working with CSV</span>
@@ -7536,7 +7536,7 @@ a.anchor-link {
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-python"><pre><span></span><span class="c1"># We are authenticating the user through the gmail account.</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># We are authenticating the user through the gmail account.</span>
 <span class="n">auth</span><span class="o">.</span><span class="n">authenticate_user</span><span class="p">()</span>
 <span class="n">gauth</span> <span class="o">=</span> <span class="n">GoogleAuth</span><span class="p">()</span>
 <span class="n">gauth</span><span class="o">.</span><span class="n">credentials</span> <span class="o">=</span> <span class="n">GoogleCredentials</span><span class="o">.</span><span class="n">get_application_default</span><span class="p">()</span>
@@ -7554,7 +7554,7 @@ a.anchor-link {
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-python"><pre><span></span><span class="kn">from</span> <span class="nn">google.colab</span> <span class="kn">import</span> <span class="n">drive</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">google.colab</span> <span class="kn">import</span> <span class="n">drive</span>
 <span class="n">drive</span><span class="o">.</span><span class="n">mount</span><span class="p">(</span><span class="s1">'/content/src'</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -7584,7 +7584,7 @@ a.anchor-link {
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-python"><pre><span></span><span class="n">file_directory</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">listdir</span><span class="p">(</span><span class="s1">'src_link'</span><span class="p">)</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">file_directory</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">listdir</span><span class="p">(</span><span class="s1">'src_link'</span><span class="p">)</span>
 <span class="c1">#Columns for the table</span>
 <span class="n">Title</span> <span class="o">=</span> <span class="p">[]</span>
 <span class="n">Content</span> <span class="o">=</span> <span class="p">[]</span>
@@ -7608,7 +7608,7 @@ a.anchor-link {
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-python"><pre><span></span><span class="c1">#Saving your CSV file</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1">#Saving your CSV file</span>
 <span class="n">your_csv</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="s1">'name.csv'</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span> <span class="c1">#Change it with the directory you want to save</span>
 </pre></div>
 </div>
@@ -7633,10 +7633,10 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [2]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-python"><pre><span></span><span class="kn">import</span> <span class="nn">logging</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">logging</span>
 
 <span class="c1"># It sets the logging level to INFO, defines a specific log message format including a timestamp and</span>
 <span class="c1">#thread name, and creates a logger object named 'logger' with the same INFO logging level.</span>
@@ -7654,10 +7654,10 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [3]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-python"><pre><span></span><span class="c1">#This function is designed to catalog and write information about files in a directory tree into a CSV file</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1">#This function is designed to catalog and write information about files in a directory tree into a CSV file</span>
 <span class="c1">#named 'catalog.csv' located in the directory.</span>
 <span class="k">def</span> <span class="nf">catalog_walk</span><span class="p">(</span><span class="n">top</span><span class="p">):</span>
   <span class="n">snapshot_file</span> <span class="o">=</span> <span class="s1">'/snapshot'</span>
@@ -7679,10 +7679,10 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [4]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-python"><pre><span></span><span class="c1">#This function iterates through files and directories under the specified top-level directory,extracts metadata</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1">#This function iterates through files and directories under the specified top-level directory,extracts metadata</span>
 <span class="c1">#for each file and directory, and writes this metadata to a CSV file using the provided csvwriter.</span>
 <span class="c1">#It stops processing and returns when the total count of processed files exceeds the maxfiles.</span>
 
@@ -7716,10 +7716,10 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [5]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-python"><pre><span></span><span class="c1">#This function recursively walks through a directory and retrieves information about directories and files,</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1">#This function recursively walks through a directory and retrieves information about directories and files,</span>
 <span class="c1">#such as their names, IDs, and MIME types, and organizes them into a hierarchical structure.</span>
 <span class="c1">#The function uses a stack-based approach to traverse the directory tree, allowing  it to handle nested directories</span>
 <span class="c1">#effectively. It also includes functionality to optionally save and load a snapshot of the traversal state to</span>
@@ -7767,10 +7767,10 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [6]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-python"><pre><span></span><span class="c1">#Iterfiles uses the Google Drive API  to search for files and folders based on specific criteria</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1">#Iterfiles uses the Google Drive API  to search for files and folders based on specific criteria</span>
 <span class="c1">#such as name, folder status, and parent folder. It retrieves information about these files and folders,</span>
 <span class="c1">#such as their IDs, names, MIME types, and more. The function yields each file or folder one at a time,</span>
 <span class="c1">#allowing for iteration over search results in a convenient way. In short this is efficient function</span>
@@ -7812,10 +7812,10 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [7]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-python"><pre><span></span><span class="c1">#This Python function takes a object called node as input. It extracts various metadata/ information</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1">#This Python function takes a object called node as input. It extracts various metadata/ information</span>
 <span class="c1">#attributes such as ID, MD5 checksum, etc from the 'node' object and returns them as a tuple in the order</span>
 <span class="c1">#If any attributes is missing it sets it to NONE</span>
 <span class="k">def</span> <span class="nf">extract_metadata</span><span class="p">(</span><span class="n">node</span><span class="p">):</span>
@@ -7833,20 +7833,56 @@ a.anchor-link {
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [8]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-python"><pre><span></span><span class="c1"># directory you want to catalog</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># directory you want to catalog</span>
 <span class="n">top</span> <span class="o">=</span> <span class="s1">'directory_you_want_to_store'</span>
 <span class="n">snapshot_file</span> <span class="o">=</span> <span class="s1">'/text_file_name.txt'</span>
 <span class="n">FOLDER</span> <span class="o">=</span> <span class="s1">'application/vnd.google-apps.folder'</span>
 <span class="n">catalog_walk</span><span class="p">(</span><span class="n">top</span><span class="p">)</span>
 </pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
+<pre>
+<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
+<span class="ansi-red-fg">OSError</span>                                   Traceback (most recent call last)
+Cell <span class="ansi-green-fg">In[8], line 5</span>
+<span class="ansi-green-intense-fg ansi-bold">      3</span> snapshot_file <span style="color: rgb(98,98,98)">=</span> <span style="color: rgb(175,0,0)">'</span><span style="color: rgb(175,0,0)">/text_file_name.txt</span><span style="color: rgb(175,0,0)">'</span>
+<span class="ansi-green-intense-fg ansi-bold">      4</span> FOLDER <span style="color: rgb(98,98,98)">=</span> <span style="color: rgb(175,0,0)">'</span><span style="color: rgb(175,0,0)">application/vnd.google-apps.folder</span><span style="color: rgb(175,0,0)">'</span>
+<span class="ansi-green-fg">----&gt; 5</span> <span class="ansi-yellow-bg">catalog_walk</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg">top</span><span class="ansi-yellow-bg">)</span>
+
+Cell <span class="ansi-green-fg">In[3], line 7</span>, in <span class="ansi-cyan-fg">catalog_walk</span><span class="ansi-blue-fg">(top)</span>
+<span class="ansi-green-intense-fg ansi-bold">      4</span> snapshot_file <span style="color: rgb(98,98,98)">=</span> <span style="color: rgb(175,0,0)">'</span><span style="color: rgb(175,0,0)">/snapshot</span><span style="color: rgb(175,0,0)">'</span>
+<span class="ansi-green-intense-fg ansi-bold">      5</span> csvoptions <span style="color: rgb(98,98,98)">=</span> {<span style="color: rgb(175,0,0)">'</span><span style="color: rgb(175,0,0)">dialect</span><span style="color: rgb(175,0,0)">'</span>: csv<span style="color: rgb(98,98,98)">.</span>excel}
+<span class="ansi-green-fg">----&gt; 7</span> OUTFILE <span style="color: rgb(98,98,98)">=</span> <span class="ansi-yellow-bg" style="color: rgb(0,135,0)">open</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg" style="color: rgb(175,0,0)">"</span><span class="ansi-yellow-bg" style="color: rgb(175,0,0)">/link</span><span class="ansi-yellow-bg" style="color: rgb(175,0,0)">"</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg" style="color: rgb(175,0,0)">"</span><span class="ansi-yellow-bg" style="color: rgb(175,0,0)">a</span><span class="ansi-yellow-bg" style="color: rgb(175,0,0)">"</span><span class="ansi-yellow-bg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">      8</span> <span style="color: rgb(95,135,135)">#Only takes 1000000 and you can replace the number</span>
+<span class="ansi-green-intense-fg ansi-bold">      9</span> csvwriter <span style="color: rgb(98,98,98)">=</span> csv<span style="color: rgb(98,98,98)">.</span>writer(OUTFILE)
+
+File <span class="ansi-green-fg">/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/IPython/core/interactiveshell.py:284</span>, in <span class="ansi-cyan-fg">_modified_open</span><span class="ansi-blue-fg">(file, *args, **kwargs)</span>
+<span class="ansi-green-intense-fg ansi-bold">    277</span> <span class="ansi-bold" style="color: rgb(0,135,0)">if</span> file <span class="ansi-bold" style="color: rgb(175,0,255)">in</span> {<span style="color: rgb(98,98,98)">0</span>, <span style="color: rgb(98,98,98)">1</span>, <span style="color: rgb(98,98,98)">2</span>}:
+<span class="ansi-green-intense-fg ansi-bold">    278</span>     <span class="ansi-bold" style="color: rgb(0,135,0)">raise</span> <span class="ansi-bold" style="color: rgb(215,95,95)">ValueError</span>(
+<span class="ansi-green-intense-fg ansi-bold">    279</span>         <span style="color: rgb(175,0,0)">f</span><span style="color: rgb(175,0,0)">"</span><span style="color: rgb(175,0,0)">IPython won</span><span style="color: rgb(175,0,0)">'</span><span style="color: rgb(175,0,0)">t let you open fd=</span><span class="ansi-bold" style="color: rgb(175,95,135)">{</span>file<span class="ansi-bold" style="color: rgb(175,95,135)">}</span><span style="color: rgb(175,0,0)"> by default </span><span style="color: rgb(175,0,0)">"</span>
+<span class="ansi-green-intense-fg ansi-bold">    280</span>         <span style="color: rgb(175,0,0)">"</span><span style="color: rgb(175,0,0)">as it is likely to crash IPython. If you know what you are doing, </span><span style="color: rgb(175,0,0)">"</span>
+<span class="ansi-green-intense-fg ansi-bold">    281</span>         <span style="color: rgb(175,0,0)">"</span><span style="color: rgb(175,0,0)">you can use builtins</span><span style="color: rgb(175,0,0)">'</span><span style="color: rgb(175,0,0)"> open.</span><span style="color: rgb(175,0,0)">"</span>
+<span class="ansi-green-intense-fg ansi-bold">    282</span>     )
+<span class="ansi-green-fg">--&gt; 284</span> <span class="ansi-bold" style="color: rgb(0,135,0)">return</span> <span class="ansi-yellow-bg">io_open</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg">file</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">*</span><span class="ansi-yellow-bg">args</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">*</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">*</span><span class="ansi-yellow-bg">kwargs</span><span class="ansi-yellow-bg">)</span>
+
+<span class="ansi-red-fg">OSError</span>: [Errno 30] Read-only file system: '/link'</pre>
 </div>
 </div>
 </div>
@@ -7886,15 +7922,15 @@ This JupyterBook serves as a comprehensive guide for newcomers to Tesseract OCR 
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [11]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-python"><pre><span></span><span class="kn">import</span> <span class="nn">pytesseract</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pytesseract</span>
 <span class="kn">from</span> <span class="nn">pytesseract</span> <span class="kn">import</span> <span class="n">TesseractError</span>
 <span class="kn">from</span> <span class="nn">gcld3</span> <span class="kn">import</span> <span class="n">NNetLanguageIdentifier</span>
 <span class="kn">from</span> <span class="nn">PIL</span> <span class="kn">import</span> <span class="n">Image</span><span class="p">,</span> <span class="n">ImageDraw</span>
@@ -7916,6 +7952,28 @@ This JupyterBook serves as a comprehensive guide for newcomers to Tesseract OCR 
 </div>
 </div>
 </div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
+<pre>
+<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
+<span class="ansi-red-fg">ModuleNotFoundError</span>                       Traceback (most recent call last)
+Cell <span class="ansi-green-fg">In[11], line 3</span>
+<span class="ansi-green-intense-fg ansi-bold">      1</span> <span class="ansi-bold" style="color: rgb(0,135,0)">import</span> <span class="ansi-bold" style="color: rgb(0,0,255)">pytesseract</span>
+<span class="ansi-green-intense-fg ansi-bold">      2</span> <span class="ansi-bold" style="color: rgb(0,135,0)">from</span> <span class="ansi-bold" style="color: rgb(0,0,255)">pytesseract</span> <span class="ansi-bold" style="color: rgb(0,135,0)">import</span> TesseractError
+<span class="ansi-green-fg">----&gt; 3</span> <span class="ansi-bold" style="color: rgb(0,135,0)">from</span> <span class="ansi-bold" style="color: rgb(0,0,255)">gcld3</span> <span class="ansi-bold" style="color: rgb(0,135,0)">import</span> NNetLanguageIdentifier
+<span class="ansi-green-intense-fg ansi-bold">      4</span> <span class="ansi-bold" style="color: rgb(0,135,0)">from</span> <span class="ansi-bold" style="color: rgb(0,0,255)">PIL</span> <span class="ansi-bold" style="color: rgb(0,135,0)">import</span> Image, ImageDraw
+<span class="ansi-green-intense-fg ansi-bold">      5</span> <span class="ansi-bold" style="color: rgb(0,135,0)">import</span> <span class="ansi-bold" style="color: rgb(0,0,255)">lang</span>
+
+<span class="ansi-red-fg">ModuleNotFoundError</span>: No module named 'gcld3'</pre>
+</div>
+</div>
+</div>
+</div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
@@ -7924,7 +7982,7 @@ This JupyterBook serves as a comprehensive guide for newcomers to Tesseract OCR 
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-python"><pre><span></span><span class="c1">#To Check what languges Pytessaract recognizes</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1">#To Check what languges Pytessaract recognizes</span>
 <span class="n">pytesseract</span><span class="o">.</span><span class="n">get_languages</span><span class="p">()</span>
 
 <span class="n">url</span> <span class="o">=</span> <span class="s1">'https://r12a.github.io/scripts/arabic/images/kashida-justification.png'</span>
@@ -7945,7 +8003,7 @@ This JupyterBook serves as a comprehensive guide for newcomers to Tesseract OCR 
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-python"><pre><span></span><span class="c1">#These functions below are commonly used in evaluating the performance of text recognition or classification systems.</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1">#These functions below are commonly used in evaluating the performance of text recognition or classification systems.</span>
 <span class="c1">#`precision` calculates the proportion of characters in the 'output' that are correct compared to the 'truth.'</span>
 <span class="k">def</span> <span class="nf">precision</span><span class="p">(</span><span class="n">truth</span><span class="p">,</span> <span class="n">output</span><span class="p">):</span>
   <span class="k">return</span> <span class="nb">len</span><span class="p">([</span><span class="n">c</span> <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">output</span> <span class="k">if</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">truth</span><span class="p">])</span> <span class="o">/</span> <span class="nb">len</span><span class="p">(</span><span class="n">output</span><span class="p">)</span>
@@ -7954,7 +8012,7 @@ This JupyterBook serves as a comprehensive guide for newcomers to Tesseract OCR 
   <span class="k">return</span> <span class="nb">len</span><span class="p">([</span><span class="n">c</span> <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">truth</span> <span class="k">if</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">output</span><span class="p">])</span> <span class="o">/</span> <span class="nb">len</span><span class="p">(</span><span class="n">truth</span><span class="p">)</span>
 
 <span class="c1">#timing the code session</span>
-<span class="o">%%</span><span class="n">timeit</span>
+<span class="o">%%time</span>it
 <span class="n">correct</span> <span class="o">=</span> <span class="n">pytesseract</span><span class="o">.</span><span class="n">image_to_string</span><span class="p">(</span><span class="n">src</span><span class="p">,</span> <span class="n">lang</span><span class="o">=</span><span class="s1">'ara'</span><span class="p">)</span>
 <span class="n">correct</span>
 </pre></div>
@@ -7970,7 +8028,7 @@ This JupyterBook serves as a comprehensive guide for newcomers to Tesseract OCR 
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-python"><pre><span></span><span class="n">two_lang_out</span> <span class="o">=</span> <span class="n">pytesseract</span><span class="o">.</span><span class="n">image_to_string</span><span class="p">(</span><span class="n">src</span><span class="p">,</span> <span class="n">lang</span><span class="o">=</span><span class="s1">'eng+ara'</span><span class="p">)</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">two_lang_out</span> <span class="o">=</span> <span class="n">pytesseract</span><span class="o">.</span><span class="n">image_to_string</span><span class="p">(</span><span class="n">src</span><span class="p">,</span> <span class="n">lang</span><span class="o">=</span><span class="s1">'eng+ara'</span><span class="p">)</span>
 <span class="n">correct</span> <span class="o">=</span> <span class="n">pytesseract</span><span class="o">.</span><span class="n">image_to_string</span><span class="p">(</span><span class="n">src</span><span class="p">,</span> <span class="n">lang</span><span class="o">=</span><span class="s1">'ara'</span><span class="p">)</span>
 <span class="n">precision</span><span class="p">(</span><span class="n">correct</span><span class="p">,</span> <span class="n">two_lang_out</span><span class="p">),</span> <span class="n">recall</span><span class="p">(</span><span class="n">correct</span><span class="p">,</span> <span class="n">two_lang_out</span><span class="p">)</span>
 </pre></div>
@@ -7986,13 +8044,10 @@ This JupyterBook serves as a comprehensive guide for newcomers to Tesseract OCR 
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-python"><pre><span></span><span class="c1">#Test Code to check if image gets converted to string</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1">#Test Code to check if image gets converted to string</span>
 <span class="n">src</span> <span class="o">=</span> <span class="n">Image</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="s1">'./src.png'</span><span class="p">)</span>
 <span class="n">src</span>
 <span class="n">pytesseract</span><span class="o">.</span><span class="n">image_to_string</span><span class="p">(</span><span class="n">src</span><span class="p">)</span>
-
-<span class="c1">#rotating page by 270 degeees</span>
-<span class="n">src</span><span class="o">.</span><span class="n">rotate</span><span class="p">(</span><span class="mi">270</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -8006,7 +8061,7 @@ This JupyterBook serves as a comprehensive guide for newcomers to Tesseract OCR 
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-python"><pre><span></span><span class="c1">#checking the confidence level of of OCR!</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1">#checking the confidence level of of OCR!</span>
 <span class="n">conf</span> <span class="o">=</span> <span class="p">[</span><span class="n">c</span> <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">meta</span><span class="o">.</span><span class="n">conf</span> <span class="k">if</span> <span class="n">c</span> <span class="o">&gt;=</span> <span class="mi">0</span><span class="p">]</span>
 <span class="nb">sum</span><span class="p">(</span><span class="n">conf</span><span class="p">)</span> <span class="o">/</span> <span class="nb">len</span><span class="p">(</span><span class="n">conf</span><span class="p">)</span>
 </pre></div>
@@ -8022,7 +8077,7 @@ This JupyterBook serves as a comprehensive guide for newcomers to Tesseract OCR 
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-python"><pre><span></span><span class="c1">#The code converts an image to grayscale and then applies a threshold to make pixels with values above 220</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1">#The code converts an image to grayscale and then applies a threshold to make pixels with values above 220</span>
 <span class="c1">#white and pixels below 220 black.</span>
 <span class="k">def</span> <span class="nf">threshold</span><span class="p">(</span><span class="n">im</span><span class="p">):</span>
   <span class="k">return</span> <span class="n">im</span><span class="o">.</span><span class="n">convert</span><span class="p">(</span><span class="s1">'LA'</span><span class="p">)</span><span class="o">.</span><span class="n">point</span><span class="p">(</span><span class="k">lambda</span> <span class="n">p</span><span class="p">:</span> <span class="mi">255</span> <span class="o">*</span> <span class="p">(</span><span class="n">p</span> <span class="o">&gt;</span> <span class="mi">220</span><span class="p">))</span>
@@ -8039,8 +8094,7 @@ This JupyterBook serves as a comprehensive guide for newcomers to Tesseract OCR 
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-python"><pre><span></span><span class="c1">#This code snippet detects the language of the input text 'aseklfae fhuasdf' and checks if the detected language</span>
-<span class="c1">#is one of the specified languages, namely 'cy' (Welsh) or 'ara' (Arabic)</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1">#language detection with preexisting python libraries</span>
 <span class="n">detected</span> <span class="o">=</span> <span class="n">langdetect</span><span class="o">.</span><span class="n">detect_langs</span><span class="p">(</span><span class="s1">'aseklfae fhuasdf'</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
 <span class="n">detected</span><span class="o">.</span><span class="n">lang</span> <span class="ow">in</span> <span class="p">{</span><span class="s1">'cy'</span><span class="p">:</span> <span class="mi">23</span><span class="p">,</span> <span class="s1">'ara'</span><span class="p">:</span> <span class="mi">234</span><span class="p">}</span>
 </pre></div>
@@ -8078,7 +8132,7 @@ This JupyterBook serves as a comprehensive guide for newcomers to Tesseract OCR 
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-python"><pre><span></span><span class="c1">#This function reads data from a Sheets specified by 'title' and 'worksheet,' and then creates a DataFrame</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1">#This function reads data from a Sheets specified by 'title' and 'worksheet,' and then creates a DataFrame</span>
 <span class="c1">#using the data. If 'has_headers' is True, it assumes the first row contains column names.</span>
 <span class="k">def</span> <span class="nf">get_df</span><span class="p">(</span><span class="n">title</span><span class="p">,</span> <span class="n">gc</span><span class="p">,</span> <span class="n">worksheet</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">has_headers</span><span class="o">=</span><span class="kc">True</span><span class="p">):</span>
     <span class="n">contents</span> <span class="o">=</span> <span class="n">gc</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="n">title</span><span class="p">)</span><span class="o">.</span><span class="n">get_worksheet</span><span class="p">(</span><span class="n">worksheet</span><span class="p">)</span><span class="o">.</span><span class="n">get_all_values</span><span class="p">()</span>
@@ -8101,7 +8155,7 @@ This JupyterBook serves as a comprehensive guide for newcomers to Tesseract OCR 
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-python"><pre><span></span><span class="c1">#This code performs image erosion on 'img' using a 5x5 kernel and displays the result.</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1">#This code performs image erosion on 'img' using a 5x5 kernel and displays the result.</span>
 <span class="n">kernel</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">ones</span><span class="p">((</span><span class="mi">5</span><span class="p">,</span> <span class="mi">5</span><span class="p">))</span>
 <span class="n">eroded</span> <span class="o">=</span> <span class="n">cv</span><span class="o">.</span><span class="n">erode</span><span class="p">(</span><span class="n">img</span><span class="p">,</span> <span class="n">kernel</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">eroded</span><span class="p">)</span>
@@ -8118,7 +8172,7 @@ This JupyterBook serves as a comprehensive guide for newcomers to Tesseract OCR 
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-python"><pre><span></span><span class="c1">#This code detects and draws lines in the 'img' using the Hough Line Transform(algorithm), creating a new image</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1">#This code detects and draws lines in the 'img' using the Hough Line Transform(algorithm), creating a new image</span>
 <span class="c1"># 'lines_img' with the detected lines highlighted.</span>
 <span class="n">lines</span> <span class="o">=</span> <span class="n">cv</span><span class="o">.</span><span class="n">HoughLinesP</span><span class="p">(</span><span class="n">canny</span><span class="p">,</span> <span class="n">rho</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">theta</span><span class="o">=</span><span class="mf">0.01</span><span class="p">,</span> <span class="n">threshold</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">minLineLength</span><span class="o">=</span><span class="mi">50</span><span class="p">)</span>
 <span class="n">lines_img</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">copy</span><span class="p">(</span><span class="n">img</span><span class="p">)</span> <span class="o">*</span> <span class="mi">0</span>
@@ -8126,20 +8180,8 @@ This JupyterBook serves as a comprehensive guide for newcomers to Tesseract OCR 
   <span class="k">for</span> <span class="n">x1</span><span class="p">,</span> <span class="n">y1</span><span class="p">,</span> <span class="n">x2</span><span class="p">,</span> <span class="n">y2</span> <span class="ow">in</span> <span class="n">line</span><span class="p">:</span>
     <span class="n">lines_img</span> <span class="o">=</span> <span class="n">cv</span><span class="o">.</span><span class="n">line</span><span class="p">(</span><span class="n">lines_img</span><span class="p">,</span> <span class="p">(</span><span class="n">x1</span><span class="p">,</span> <span class="n">y1</span><span class="p">),</span> <span class="p">(</span><span class="n">x2</span><span class="p">,</span> <span class="n">y2</span><span class="p">),</span> <span class="p">(</span><span class="mi">255</span><span class="p">,</span> <span class="mi">255</span><span class="p">,</span> <span class="mi">255</span><span class="p">),</span> <span class="mi">5</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">lines_img</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-python"><pre><span></span><span class="c1">#This code calculates the average angle of detected lines in 'lines' and estimates the rotation angle</span>
+
+<span class="c1">#This code calculates the average angle of detected lines in 'lines' and estimates the rotation angle</span>
 <span class="c1">#of a page based on those lines.</span>
 <span class="n">angles</span> <span class="o">=</span> <span class="p">[]</span>
 <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">lines</span><span class="p">:</span>
@@ -8170,7 +8212,7 @@ This JupyterBook serves as a comprehensive guide for newcomers to Tesseract OCR 
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-python"><pre><span></span><span class="c1">#Reads a catalog, tracks processed files, and performs OCR on remaining files.</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1">#Reads a catalog, tracks processed files, and performs OCR on remaining files.</span>
 <span class="c1">#Iterates through the catalog, applies OCR, and updates the completion status.</span>
 <span class="k">def</span> <span class="nf">run</span><span class="p">(</span><span class="n">catalog_path</span><span class="p">,</span> <span class="n">out</span><span class="p">,</span> <span class="n">success</span><span class="p">):</span>
   <span class="n">catalog</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">catalog_path</span><span class="p">)</span>
@@ -8200,7 +8242,7 @@ This JupyterBook serves as a comprehensive guide for newcomers to Tesseract OCR 
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-python"><pre><span></span><span class="c1">#This class is used to estimate the accuracy of text extraction  from images. It does so by displaying images</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1">#This class is used to estimate the accuracy of text extraction  from images. It does so by displaying images</span>
 <span class="c1">#and prompting the user to verify accuracy, and collecting accuracy data. The 'mean' method calculates and</span>
 <span class="c1">#returns the mean accuracy from the collected data.</span>
 <span class="k">class</span> <span class="nc">TextAccuracyEstimator</span><span class="p">:</span>
@@ -8254,7 +8296,7 @@ This JupyterBook serves as a comprehensive guide for newcomers to Tesseract OCR 
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-python"><pre><span></span><span class="c1">#This class performs cross-text OCR accuracy analysis, with methods to calculate accuracy,</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1">#This class performs cross-text OCR accuracy analysis, with methods to calculate accuracy,</span>
 <span class="c1">#find the mean, and visualize the accuracy distribution.</span>
 <span class="k">class</span> <span class="nc">CrossTextAnalysis</span><span class="p">:</span>
 
@@ -8282,20 +8324,8 @@ This JupyterBook serves as a comprehensive guide for newcomers to Tesseract OCR 
     <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">'Accuracy'</span><span class="p">)</span>
     <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">'Distribution of OCR Accuracy by Text'</span><span class="p">)</span>
     <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">block</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-python"><pre><span></span><span class="c1">#running the ocr file as a whole on large documents</span>
+
+<span class="c1">#running the ocr file as a whole on large documents</span>
 <span class="n">run</span><span class="p">(</span>
     <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">output_path</span><span class="p">,</span> <span class="s1">'catalog.csv'</span><span class="p">),</span>
     <span class="n">output_path</span><span class="p">,</span>
@@ -8325,25 +8355,7 @@ This JupyterBook serves as a comprehensive guide for newcomers to Tesseract OCR 
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-python"><pre><span></span><span class="kn">from</span> <span class="nn">collections</span> <span class="kn">import</span> <span class="n">Counter</span>
-<span class="kn">import</span> <span class="nn">pytesseract</span>
-<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
-<span class="kn">import</span> <span class="nn">random</span>
-<span class="kn">import</span> <span class="nn">gc</span> <span class="c1">#garbage collection module</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-python"><pre><span></span><span class="c1">#We have two functions, get_model and get_tokenizer, which return a T5 model and a T5 tokenizer, respectively.</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1">#We have two functions, get_model and get_tokenizer, which return a T5 model and a T5 tokenizer, respectively.</span>
 <span class="k">def</span> <span class="nf">get_model</span><span class="p">():</span>
     <span class="n">model</span> <span class="o">=</span> <span class="n">T5ForConditionalGeneration</span><span class="o">.</span><span class="n">from_pretrained</span><span class="p">(</span><span class="s1">'t5-small'</span><span class="p">)</span>
     <span class="k">return</span> <span class="n">model</span>
@@ -8368,7 +8380,7 @@ This JupyterBook serves as a comprehensive guide for newcomers to Tesseract OCR 
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-python"><pre><span></span><span class="c1">#This function generates summarizations for a list of tokenized texts using the T5 model, applying specified</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1">#This function generates summarizations for a list of tokenized texts using the T5 model, applying specified</span>
 <span class="c1">#parameters and constraints, and then concatenates the generated summaries into a single output.</span>
 <span class="k">def</span> <span class="nf">get_summarization</span><span class="p">(</span><span class="n">tokenized_texts</span><span class="p">,</span> <span class="n">min_length</span><span class="p">,</span> <span class="n">max_length</span><span class="p">):</span>
     <span class="n">outputs</span> <span class="o">=</span> <span class="s2">""</span>
@@ -8395,7 +8407,7 @@ This JupyterBook serves as a comprehensive guide for newcomers to Tesseract OCR 
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-python"><pre><span></span><span class="c1">#This function preprocesses a long text by removing leading/trailing spaces and line breaks, then splits</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1">#This function preprocesses a long text by removing leading/trailing spaces and line breaks, then splits</span>
 <span class="c1">#it into smaller chunks of 512 characters each. It adds "summarize:" to each chunk, tokenizes them using a</span>
 <span class="c1">#T5 tokenizer, and returns a list of tokenized chunks.</span>
 <span class="k">def</span> <span class="nf">preprocess</span><span class="p">(</span><span class="n">texts</span><span class="p">):</span>
@@ -8420,14 +8432,13 @@ This JupyterBook serves as a comprehensive guide for newcomers to Tesseract OCR 
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-python"><pre><span></span><span class="c1">#The code processes a batch of text data, generates summaries for each text, and saves the summaries in</span>
-<span class="c1">#separate text files with incremental filenames, starting from index 1000.</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1">#The code processes a batch of text data, generates summaries for each text, and saves the summaries in</span>
+<span class="c1">#separate text files with incremental filenames.</span>
 <span class="n">su</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
 <span class="n">contents</span> <span class="o">=</span> <span class="n">su</span><span class="p">[</span><span class="s1">'Content'</span><span class="p">]</span>
 <span class="n">summaries</span> <span class="o">=</span> <span class="p">[]</span>
 
-<span class="n">i</span> <span class="o">=</span> <span class="mi">1000</span> <span class="c1"># 1000 is a arbitary number</span>
-<span class="k">for</span> <span class="n">text</span> <span class="ow">in</span> <span class="n">contents</span><span class="p">[</span><span class="mi">1000</span><span class="p">:]:</span>
+<span class="k">for</span> <span class="n">text</span> <span class="ow">in</span> <span class="n">contents</span><span class="p">:</span>
     <span class="n">tokenized_texts1</span> <span class="o">=</span> <span class="n">preprocess</span><span class="p">(</span><span class="n">text</span><span class="p">)</span>
     <span class="n">outputs</span> <span class="o">=</span> <span class="n">get_summarization</span><span class="p">(</span><span class="n">tokenized_texts1</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">30</span><span class="p">)</span>
     <span class="n">name</span> <span class="o">=</span> <span class="s2">"src"</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">i</span><span class="p">)</span> <span class="o">+</span> <span class="s2">".txt"</span>
@@ -8448,7 +8459,7 @@ This JupyterBook serves as a comprehensive guide for newcomers to Tesseract OCR 
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-python"><pre><span></span><span class="c1">#The code analyzes an image to detect a "Right Upper" region by examining columns, and if a specific pattern of</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1">#The code analyzes an image to detect a "Right Upper" region by examining columns, and if a specific pattern of</span>
 <span class="c1">#pixels is found, it prints "Right Upper detected."</span>
 <span class="k">def</span> <span class="nf">checkLeftSuper</span><span class="p">(</span><span class="n">img</span><span class="p">):</span>
   <span class="n">left</span><span class="p">,</span> <span class="n">bottom</span><span class="p">,</span> <span class="n">dim</span> <span class="o">=</span> <span class="n">img</span><span class="o">.</span><span class="n">shape</span>
@@ -8480,7 +8491,7 @@ This JupyterBook serves as a comprehensive guide for newcomers to Tesseract OCR 
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-python"><pre><span></span><span class="c1">#This function checks for a "Right Upper" region in an image and prints "Right Upper detected" if found.</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1">#This function checks for a "Right Upper" region in an image and prints "Right Upper detected" if found.</span>
 <span class="k">def</span> <span class="nf">checkRightSuper</span><span class="p">(</span><span class="n">img</span><span class="p">):</span>
   <span class="n">left</span><span class="p">,</span> <span class="n">bottom</span><span class="p">,</span> <span class="n">dim</span> <span class="o">=</span> <span class="n">img</span><span class="o">.</span><span class="n">shape</span>
   <span class="n">firstBlack</span> <span class="o">=</span> <span class="mi">0</span>
@@ -8511,7 +8522,7 @@ This JupyterBook serves as a comprehensive guide for newcomers to Tesseract OCR 
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-python"><pre><span></span><span class="c1">#Makes a function to check superscript in an image</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1">#Checks for superscript in an image</span>
 <span class="k">def</span> <span class="nf">checkIfSuper</span><span class="p">(</span><span class="n">img</span><span class="p">):</span>
   <span class="n">plt</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">img</span><span class="p">)</span>
   <span class="n">checkLeftSuper</span><span class="p">(</span><span class="n">img</span><span class="p">)</span>
@@ -8529,7 +8540,7 @@ This JupyterBook serves as a comprehensive guide for newcomers to Tesseract OCR 
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-python"><pre><span></span><span class="c1">#This code batch-processes PDF files, extracting text while ensuring correct orientation. It iterates</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1">#This code batch-processes PDF files, extracting text while ensuring correct orientation. It iterates</span>
 <span class="c1">#through the PDFs, converts pages to images, and rotates them if needed based on word frequencies.</span>
 <span class="c1">#Extracted text is saved in text files, and orientation errors are logged in a separate file.</span>
 
@@ -8597,7 +8608,7 @@ This JupyterBook serves as a comprehensive guide for newcomers to Tesseract OCR 
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-python"><pre><span></span><span class="c1">#This function calculates the sum of word frequencies in a Counter, giving higher weights to the top 2, 5, and 10 most common words.</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1">#This function calculates the sum of word frequencies in a Counter, giving higher weights to the top 2, 5, and 10 most common words.</span>
 <span class="k">def</span> <span class="nf">dict_common_sum</span><span class="p">(</span><span class="n">cntr</span><span class="p">):</span>
   <span class="nb">sum</span> <span class="o">=</span> <span class="mi">0</span>
   <span class="k">for</span> <span class="n">word</span><span class="p">,</span> <span class="n">freq</span> <span class="ow">in</span> <span class="n">cntr</span><span class="o">.</span><span class="n">most_common</span><span class="p">(</span><span class="mi">2</span><span class="p">):</span>
@@ -8620,7 +8631,7 @@ This JupyterBook serves as a comprehensive guide for newcomers to Tesseract OCR 
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-python"><pre><span></span><span class="c1">#1. It processes files and directories in a specified directory, collecting metadata such as ID, size, MIME type, and timestamps for each directory.</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1">#1. It processes files and directories in a specified directory, collecting metadata such as ID, size, MIME type, and timestamps for each directory.</span>
 <span class="c1">#2. For each PDF file in the directory, it extracts pages and determines the correct orientation based on text analysis.</span>
 <span class="c1">#3. It saves the oriented pages as JPEG images and logs orientation errors in "failed_pages.txt."</span>
 <span class="c1">#4. The code randomly selects a subset of pages (up to 5 or 10% of total pages) for orientation analysis.</span>
@@ -8757,10 +8768,8 @@ This JupyterBook serves as a comprehensive guide for newcomers to Tesseract OCR 
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-python"><pre><span></span><span class="kn">import</span> <span class="nn">pytesseract</span>
-<span class="kn">from</span> <span class="nn">pytesseract</span> <span class="kn">import</span> <span class="n">Output</span>
-<span class="kn">from</span> <span class="nn">tesseract_manager</span> <span class="kn">import</span> <span class="n">data_to_string</span>
-<span class="kn">from</span> <span class="nn">gensim.utils</span> <span class="kn">import</span> <span class="n">deaccent</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1">#This line of code extracts text from the image 'translit1' using the 'xyz' language.</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">pytesseract</span><span class="o">.</span><span class="n">image_to_string</span><span class="p">(</span><span class="s2">"src"</span><span class="p">,</span> <span class="n">lang</span><span class="o">=</span><span class="s1">'xyz'</span><span class="p">))</span>
 </pre></div>
 </div>
 </div>
@@ -8774,9 +8783,8 @@ This JupyterBook serves as a comprehensive guide for newcomers to Tesseract OCR 
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-python"><pre><span></span><span class="c1">#Open and display the image 'src.png'.</span>
-<span class="n">translit1</span> <span class="o">=</span> <span class="n">Image</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="s1">'src.png'</span><span class="p">)</span>
-<span class="n">translit1</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1">#Extract text data (including coordinates and other information) from the image 'src' using the 'xyz' language.</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">pytesseract</span><span class="o">.</span><span class="n">image_to_data</span><span class="p">(</span><span class="s2">"src"</span><span class="p">,</span> <span class="n">lang</span><span class="o">=</span><span class="s1">'xyz'</span><span class="p">))</span>
 </pre></div>
 </div>
 </div>
@@ -8790,8 +8798,8 @@ This JupyterBook serves as a comprehensive guide for newcomers to Tesseract OCR 
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-python"><pre><span></span><span class="c1">#This line of code extracts text from the image 'translit1' using the 'xyz' language.</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">pytesseract</span><span class="o">.</span><span class="n">image_to_string</span><span class="p">(</span><span class="n">translit1</span><span class="p">,</span> <span class="n">lang</span><span class="o">=</span><span class="s1">'xyz'</span><span class="p">))</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1">#Extracts text boxes from the image 'src' and then splits the result into lines.</span>
+<span class="n">pytesseract</span><span class="o">.</span><span class="n">image_to_boxes</span><span class="p">(</span><span class="s2">"src"</span><span class="p">)</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">'</span><span class="se">\n</span><span class="s1">'</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -8805,43 +8813,13 @@ This JupyterBook serves as a comprehensive guide for newcomers to Tesseract OCR 
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-python"><pre><span></span><span class="c1">#Extract text data (including coordinates and other information) from the image 'translit2' using the 'xyz' language.</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">pytesseract</span><span class="o">.</span><span class="n">image_to_data</span><span class="p">(</span><span class="n">translit2</span><span class="p">,</span> <span class="n">lang</span><span class="o">=</span><span class="s1">'xyz'</span><span class="p">))</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-python"><pre><span></span><span class="c1">#Extracts text boxes from the image 'translit1' and then splits the result into lines.</span>
-<span class="n">pytesseract</span><span class="o">.</span><span class="n">image_to_boxes</span><span class="p">(</span><span class="n">translit1</span><span class="p">)</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">'</span><span class="se">\n</span><span class="s1">'</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-python"><pre><span></span><span class="c1">#printing single characters</span>
-<span class="k">for</span> <span class="n">box</span> <span class="ow">in</span> <span class="n">pytesseract</span><span class="o">.</span><span class="n">image_to_boxes</span><span class="p">(</span><span class="n">translit2</span><span class="p">)</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">'</span><span class="se">\n</span><span class="s1">'</span><span class="p">):</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1">#printing single characters</span>
+<span class="k">for</span> <span class="n">box</span> <span class="ow">in</span> <span class="n">pytesseract</span><span class="o">.</span><span class="n">image_to_boxes</span><span class="p">(</span><span class="s2">"src"</span><span class="p">)</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">'</span><span class="se">\n</span><span class="s1">'</span><span class="p">):</span>
   <span class="k">if</span> <span class="n">box</span><span class="p">:</span>
     <span class="n">left</span><span class="p">,</span> <span class="n">bottom</span><span class="p">,</span> <span class="n">right</span><span class="p">,</span> <span class="n">top</span> <span class="o">=</span> <span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">s</span><span class="p">)</span> <span class="k">for</span> <span class="n">s</span> <span class="ow">in</span> <span class="n">box</span><span class="o">.</span><span class="n">split</span><span class="p">()[</span><span class="mi">1</span><span class="p">:</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">left</span><span class="p">,</span> <span class="n">bottom</span><span class="p">,</span> <span class="n">right</span><span class="p">,</span> <span class="n">top</span><span class="p">)</span>
     <span class="k">try</span><span class="p">:</span>
-      <span class="n">plt</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">translit2</span><span class="o">.</span><span class="n">crop</span><span class="p">((</span><span class="n">left</span><span class="p">,</span> <span class="n">translit2</span><span class="o">.</span><span class="n">height</span> <span class="o">-</span> <span class="n">top</span><span class="p">,</span> <span class="n">right</span><span class="p">,</span> <span class="n">translit2</span><span class="o">.</span><span class="n">height</span> <span class="o">-</span> <span class="n">bottom</span><span class="p">)))</span>
+      <span class="n">plt</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="s2">"src"</span><span class="o">.</span><span class="n">crop</span><span class="p">((</span><span class="n">left</span><span class="p">,</span> <span class="s2">"src"</span><span class="o">.</span><span class="n">height</span> <span class="o">-</span> <span class="n">top</span><span class="p">,</span> <span class="n">right</span><span class="p">,</span> <span class="s2">"src"</span><span class="o">.</span><span class="n">height</span> <span class="o">-</span> <span class="n">bottom</span><span class="p">)))</span>
     <span class="k">except</span><span class="p">:</span> <span class="k">pass</span>
     <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">block</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
     <span class="n">plt</span><span class="o">.</span><span class="n">pause</span><span class="p">(</span><span class="mf">0.01</span><span class="p">)</span>
@@ -8858,7 +8836,7 @@ This JupyterBook serves as a comprehensive guide for newcomers to Tesseract OCR 
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-python"><pre><span></span><span class="c1">#This code processes the input string 'ṬṭÁáÚúĀāŪū' using a function called 'deaccent' to remove diacritics or accents, resulting in 'TtAaUuAaUu'.</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1">#This code processes the input string 'ṬṭÁáÚúĀāŪū' using a function called 'deaccent' to remove diacritics or accents, resulting in 'TtAaUuAaUu'.</span>
 <span class="n">deaccent</span><span class="p">(</span><span class="s1">'ṬṭÁáÚúĀāŪū'</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -8873,7 +8851,7 @@ This JupyterBook serves as a comprehensive guide for newcomers to Tesseract OCR 
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-python"><pre><span></span><span class="c1">#This code helps select characters for multilingual text processing by assigning weights based on character similarity and language context.</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1">#This code helps select characters for multilingual text processing by assigning weights based on character similarity and language context.</span>
 <span class="c1">#It then chooses the character with the highest weight for accurate text processing.</span>
 <span class="n">universal_chars</span> <span class="o">=</span> <span class="nb">set</span><span class="p">(</span><span class="s1">'`1234567890-=~!@#$%^&amp;*()_+[]</span><span class="se">\\</span><span class="s1">;</span><span class="se">\'</span><span class="s1">,./</span><span class="si">{}</span><span class="s1">|:"&lt;&gt;?'</span><span class="p">)</span>
 
@@ -8925,7 +8903,7 @@ This JupyterBook serves as a comprehensive guide for newcomers to Tesseract OCR 
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-python"><pre><span></span><span class="c1">#This code uses PyTesseract to perform character-based transliteration on an image. It replaces characters</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1">#This code uses PyTesseract to perform character-based transliteration on an image. It replaces characters</span>
 <span class="c1">#with their corresponding transliterated counterparts, considering similarity and context.</span>
 <span class="k">def</span> <span class="nf">translit</span><span class="p">(</span><span class="n">image</span><span class="p">,</span> <span class="n">box_sim_thresh</span><span class="o">=</span><span class="mf">0.65</span><span class="p">):</span>
   <span class="n">flagship_language</span> <span class="o">=</span> <span class="s1">'ces'</span>
@@ -8981,27 +8959,6 @@ This JupyterBook serves as a comprehensive guide for newcomers to Tesseract OCR 
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-python"><pre><span></span><span class="c1">#This function 'run(n)' processes a specified test case using 'translit.translit', prints the result, and displays the corresponding image.</span>
-<span class="k">def</span> <span class="nf">run</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
-<span class="w">  </span><span class="sd">"""Runs translit.translit on the nth test case."""</span>
-  <span class="n">im</span> <span class="o">=</span> <span class="n">Image</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="s1">'snippets/translit_sample_</span><span class="si">{}</span><span class="s1">.png'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">n</span><span class="p">))</span>
-  <span class="nb">print</span><span class="p">(</span><span class="n">translit</span><span class="o">.</span><span class="n">translit</span><span class="p">(</span><span class="n">im</span><span class="p">))</span>
-  <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">14</span><span class="p">,</span> <span class="mi">14</span><span class="p">))</span>
-  <span class="n">plt</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">im</span><span class="p">)</span>
-  <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
 </div>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper" tabindex="0">
@@ -9033,7 +8990,7 @@ In this section, we will explore the process of conducting statistical analysis 
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-python"><pre><span></span><span class="kn">import</span> <span class="nn">pickle</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pickle</span>
 <span class="kn">from</span> <span class="nn">scipy</span> <span class="kn">import</span> <span class="n">stats</span>
 <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">'file.pickle'</span><span class="p">,</span> <span class="s1">'rb'</span><span class="p">)</span> <span class="k">as</span> <span class="n">dbfile</span><span class="p">:</span>
   <span class="n">src</span> <span class="o">=</span> <span class="n">pickle</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">dbfile</span><span class="p">)</span>
@@ -9050,7 +9007,7 @@ In this section, we will explore the process of conducting statistical analysis 
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-python"><pre><span></span><span class="c1">#This code computes and visualizes the distribution of 'heights' and 'confidences' from the 'src.metadata'.</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1">#This code computes and visualizes the distribution of 'heights' and 'confidences' from the 'src.metadata'.</span>
 <span class="c1">#It creates a histogram for 'heights' and a scatter plot of 'heights' against 'confidences'.</span>
 <span class="n">heights</span> <span class="o">=</span> <span class="p">[]</span>
 <span class="k">for</span> <span class="n">data</span> <span class="ow">in</span> <span class="n">src</span><span class="o">.</span><span class="n">metadata</span><span class="p">:</span>
@@ -9077,7 +9034,7 @@ In this section, we will explore the process of conducting statistical analysis 
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-python"><pre><span></span><span class="c1">#calculating pearson r which is way to find correlation between heights and confidences</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1">#calculating pearson r which is way to find correlation between heights and confidences</span>
 <span class="n">stats</span><span class="o">.</span><span class="n">pearsonr</span><span class="p">(</span><span class="n">heights</span><span class="p">,</span> <span class="n">confidences</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -9092,7 +9049,7 @@ In this section, we will explore the process of conducting statistical analysis 
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-python"><pre><span></span><span class="c1">#This code calculates and displays the moving average of confidence ('movmeans') for bins of median word heights.</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1">#This code calculates and displays the moving average of confidence ('movmeans') for bins of median word heights.</span>
 <span class="c1">#It groups confidence values by word height ranges, computes the mean confidence for each range, and then</span>
 <span class="c1">#visualizes this data using a scatter plot with 'median word height' on x-axis and 'mean confidence' on y-axis.</span>
 <span class="n">movmeans</span> <span class="o">=</span> <span class="p">[]</span>
@@ -9118,7 +9075,7 @@ In this section, we will explore the process of conducting statistical analysis 
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-python"><pre><span></span><span class="c1">#computing the median for height using inbuilt functions</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1">#computing the median for height using inbuilt functions</span>
 <span class="n">median</span><span class="p">(</span><span class="n">heights</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -9133,7 +9090,7 @@ In this section, we will explore the process of conducting statistical analysis 
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-python"><pre><span></span><span class="c1"># histogram for median height</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># histogram for median height</span>
 <span class="n">median_heights</span> <span class="o">=</span> <span class="p">[</span>
            <span class="n">data</span><span class="o">.</span><span class="n">height</span><span class="o">.</span><span class="n">median</span><span class="p">()</span>
            <span class="k">for</span> <span class="n">data</span> <span class="ow">in</span> <span class="p">[</span><span class="n">data</span> <span class="k">for</span> <span class="n">data</span> <span class="ow">in</span> <span class="n">src</span><span class="o">.</span><span class="n">metadata</span> <span class="k">if</span> <span class="n">data</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">]</span>
@@ -9154,7 +9111,7 @@ In this section, we will explore the process of conducting statistical analysis 
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-python"><pre><span></span><span class="c1">#This code calculates and reports the mean wordwise and pagewise confidences from the 'src' data,</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1">#This code calculates and reports the mean wordwise and pagewise confidences from the 'src' data,</span>
 <span class="c1">#highlighting the number of pages analyzed with a confidence score of less than 75.</span>
 <span class="n">mean_confidences</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span>
     <span class="n">conf</span> <span class="k">for</span> <span class="n">conf</span> <span class="ow">in</span> <span class="n">src</span><span class="o">.</span><span class="n">mean_confidences</span> <span class="k">if</span> <span class="ow">not</span> <span class="n">pd</span><span class="o">.</span><span class="n">isna</span><span class="p">(</span><span class="n">conf</span><span class="p">))</span>
@@ -9179,22 +9136,6 @@ In this section, we will explore the process of conducting statistical analysis 
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-python"><pre><span></span><span class="c1">#Time taken to complete the operation</span>
-<span class="n">times</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">src</span><span class="o">.</span><span class="n">times</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">-</span> <span class="n">src</span><span class="o">.</span><span class="n">times</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">src</span><span class="o">.</span><span class="n">times</span><span class="p">)))</span>
-<span class="n">statistics</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">times</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
 </div>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper" tabindex="0">
@@ -9214,7 +9155,7 @@ In this section, we will explore the process of conducting statistical analysis 
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-python"><pre><span></span><span class="c1">#This code creates a bar plot with Seaborn, displaying the categorical distribution of 'true_orientation'</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1">#This code creates a bar plot with Seaborn, displaying the categorical distribution of 'true_orientation'</span>
 <span class="c1">#in degrees clockwise, including cumulative percentage distribution, helping analyze page orientation data.</span>
 <span class="k">def</span> <span class="nf">bar</span><span class="p">(</span><span class="n">series</span><span class="p">,</span> <span class="n">confidence</span><span class="o">=</span><span class="mf">0.95</span><span class="p">):</span>
   <span class="n">categories</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">series</span><span class="o">.</span><span class="n">unique</span><span class="p">())</span>
@@ -9257,7 +9198,7 @@ In this section, we will explore the process of conducting statistical analysis 
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-python"><pre><span></span><span class="c1">#This code uses bootstrapping to analyze the 'true_orientation' data by comparing the proportions of '270' and '90' values and stores the results in 'ab_test'.</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1">#This code uses bootstrapping to analyze the 'true_orientation' data by comparing the proportions of '270' and '90' values and stores the results in 'ab_test'.</span>
 <span class="k">def</span> <span class="nf">boot</span><span class="p">(</span><span class="n">series</span><span class="p">,</span> <span class="n">statistic</span><span class="p">,</span> <span class="n">n</span><span class="o">=</span><span class="mi">100000</span><span class="p">):</span>
   <span class="n">values</span> <span class="o">=</span> <span class="nb">list</span><span class="p">()</span>
   <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
@@ -9283,7 +9224,7 @@ In this section, we will explore the process of conducting statistical analysis 
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-python"><pre><span></span><span class="c1">#This code generates a summary table of frequencies for the 'true_orientation' data, including confidence intervals.</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1">#This code generates a summary table of frequencies for the 'true_orientation' data, including confidence intervals.</span>
 <span class="c1">#It calculates the lower and upper bounds for the specified confidence level and then returns info in a DataFrame format.</span>
 <span class="k">def</span> <span class="nf">frequencies</span><span class="p">(</span><span class="n">series</span><span class="p">,</span> <span class="n">confidence</span><span class="o">=</span><span class="mf">0.95</span><span class="p">,</span> <span class="n">n_boot</span><span class="o">=</span><span class="mi">10000</span><span class="p">):</span>
   <span class="n">alpha</span> <span class="o">=</span> <span class="mi">1</span> <span class="o">-</span> <span class="n">confidence</span>
@@ -9326,7 +9267,7 @@ In this section, we will explore the process of conducting statistical analysis 
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-python"><pre><span></span><span class="c1">#This is an example for two tailed test if you want more info please refer to online sources</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1">#This is an example for two tailed test if you want more info please refer to online sources</span>
 <span class="mi">2</span> <span class="o">*</span> <span class="nb">sum</span><span class="p">(</span><span class="n">x</span> <span class="o">&lt;</span> <span class="mi">0</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">ab_test</span><span class="p">)</span> <span class="o">/</span> <span class="nb">len</span><span class="p">(</span><span class="n">ab_test</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -9341,7 +9282,7 @@ In this section, we will explore the process of conducting statistical analysis 
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-python"><pre><span></span><span class="c1">#This code defines a function, 'mean_confidence_bar,' to create a bar chart showing the mean confidence distribution</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1">#This code defines a function, 'mean_confidence_bar,' to create a bar chart showing the mean confidence distribution</span>
 <span class="c1">#for a categorical variable ('x') in the 'data' and sorts categories by mean confidence.</span>
 <span class="k">def</span> <span class="nf">mean_confidence_bar</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">x</span><span class="p">):</span>
   <span class="n">counts</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="n">x</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
@@ -9374,64 +9315,7 @@ In this section, we will explore the process of conducting statistical analysis 
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-python"><pre><span></span><span class="c1">#This code calculates and displays the residuals (differences between observed 'accuracies' and predicted values)</span>
-<span class="c1">#and scatters them against 'confs' (confidence scores).</span>
-<span class="n">residuals</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">accuracies</span><span class="p">)</span> <span class="o">-</span> <span class="p">(</span><span class="n">res</span><span class="o">.</span><span class="n">intercept</span> <span class="o">+</span> <span class="n">res</span><span class="o">.</span><span class="n">slope</span> <span class="o">*</span> <span class="n">confs</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">confs</span><span class="p">,</span> <span class="n">residuals</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-python"><pre><span></span><span class="c1">#This code calculates the required sample size 'n' for a given confidence interval width ('ci_width')</span>
-<span class="c1">#based on the standard deviation of 'projected_accuracies' and the 97.5th percentile of the</span>
-<span class="c1">#standard normal distribution (2-tailed).</span>
-<span class="n">ci_width</span> <span class="o">=</span> <span class="mf">0.06</span>
-<span class="n">n</span> <span class="o">=</span> <span class="p">(</span><span class="n">projected_accuracies</span><span class="o">.</span><span class="n">std</span><span class="p">()</span> <span class="o">*</span> <span class="n">stats</span><span class="o">.</span><span class="n">norm</span><span class="o">.</span><span class="n">ppf</span><span class="p">(</span><span class="mf">0.975</span><span class="p">)</span> <span class="o">*</span> <span class="mi">2</span> <span class="o">/</span> <span class="n">ci_width</span><span class="p">)</span> <span class="o">**</span> <span class="mi">2</span>
-<span class="n">n</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-python"><pre><span></span><span class="c1">#This code calculates and visualizes the distribution of 'projected_accuracies' using a histogram with Seaborn.</span>
-<span class="n">projected_accuracies</span> <span class="o">=</span> <span class="p">(</span>
-    <span class="n">res</span><span class="o">.</span><span class="n">intercept</span>
-    <span class="o">+</span> <span class="n">data</span><span class="p">[</span><span class="n">data</span><span class="o">.</span><span class="n">mean_confidence</span> <span class="o">!=</span> <span class="s1">''</span><span class="p">]</span><span class="o">.</span><span class="n">mean_confidence</span> <span class="o">*</span> <span class="n">res</span><span class="o">.</span><span class="n">slope</span>
-<span class="p">)</span>
-<span class="n">ax</span> <span class="o">=</span> <span class="n">sns</span><span class="o">.</span><span class="n">histplot</span><span class="p">(</span><span class="n">projected_accuracies</span><span class="p">)</span>
-<span class="n">ax</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">'Distribution of Projected Accuracies'</span><span class="p">)</span>
-<span class="n">ax</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s1">'Projected Accuracy'</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-python"><pre><span></span><span class="c1">#Conducts bootstrapping to estimate a global accuracy value based on projected accuracies and the</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1">#Conducts bootstrapping to estimate a global accuracy value based on projected accuracies and the</span>
 <span class="c1">#number of words in each text.</span>
 <span class="n">global_accuracies</span> <span class="o">=</span> <span class="n">boot</span><span class="p">(</span>
     <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="p">{</span>
@@ -9446,22 +9330,6 @@ In this section, we will explore the process of conducting statistical analysis 
         <span class="p">)</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span> <span class="o">/</span> <span class="n">df</span><span class="o">.</span><span class="n">n_words</span><span class="o">.</span><span class="n">sum</span><span class="p">(),</span>
     <span class="n">n</span><span class="o">=</span><span class="mi">1000</span>
 <span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-python"><pre><span></span><span class="c1">#Calculates the lower and upper bounds of the confidence interval for the 'global_accuracies' and finds the width of the interval.</span>
-<span class="n">lower</span><span class="p">,</span> <span class="n">upper</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">percentile</span><span class="p">(</span><span class="n">global_accuracies</span><span class="p">,</span> <span class="mf">2.5</span><span class="p">),</span> <span class="n">np</span><span class="o">.</span><span class="n">percentile</span><span class="p">(</span><span class="n">global_accuracies</span><span class="p">,</span> <span class="mf">97.5</span><span class="p">)</span>
-<span class="n">lower</span><span class="p">,</span> <span class="n">upper</span><span class="p">,</span> <span class="n">upper</span> <span class="o">-</span> <span class="n">lower</span>
 </pre></div>
 </div>
 </div>
@@ -9499,7 +9367,7 @@ In this section, we will explore the process of conducting statistical analysis 
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-python"><pre><span></span><span class="c1">#This Python code defines a generic `WeightTracker` class that tracks the weights of items in a list, allowing</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1">#This Python code defines a generic `WeightTracker` class that tracks the weights of items in a list, allowing</span>
 <span class="c1">#for weighted item addition and reordering. Additionally, it provides a list of common languages for OCR</span>
  <span class="c1">#(Optical Character Recognition) purposes.</span>
 
@@ -9539,7 +9407,7 @@ In this section, we will explore the process of conducting statistical analysis 
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-python"><pre><span></span><span class="n">COMMON_LANGUAGES</span> <span class="o">=</span> <span class="p">[</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">COMMON_LANGUAGES</span> <span class="o">=</span> <span class="p">[</span>
     <span class="s1">'eng'</span><span class="p">,</span> <span class="s1">'tur'</span><span class="p">,</span> <span class="s1">'ara'</span><span class="p">,</span> <span class="s1">'deu'</span><span class="p">,</span> <span class="s1">'fra'</span><span class="p">,</span> <span class="s1">'rus'</span><span class="p">,</span> <span class="s1">'spa'</span><span class="p">,</span> <span class="s1">'nld'</span><span class="p">,</span>
     <span class="s1">'jpn'</span><span class="p">,</span> <span class="s1">'chi_sim'</span><span class="p">,</span> <span class="s1">'chi_tra'</span><span class="p">,</span> <span class="s1">'heb'</span><span class="p">,</span> <span class="s1">'ita'</span><span class="p">,</span> <span class="s1">'dan'</span><span class="p">,</span> <span class="s1">'swe'</span><span class="p">,</span>
     <span class="s1">'ell'</span><span class="p">,</span> <span class="s1">'lat'</span><span class="p">,</span> <span class="s1">'fin'</span>
@@ -9557,7 +9425,7 @@ In this section, we will explore the process of conducting statistical analysis 
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-python"><pre><span></span><span class="c1">#This class, named `Text`, is designed for performing Optical Character Recognition (OCR) on documents.</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1">#This class, named `Text`, is designed for performing Optical Character Recognition (OCR) on documents.</span>
  <span class="c1">#  It includes various functionalities such as:</span>
 <span class="c1">#1. Initializing OCR parameters: It allows you to set parameters like image scaling, confidence thresholds, and language tracking.</span>
 <span class="c1">#2. Analyzing and processing pages: It reads text data from document pages, applies OCR, and records metadata, language, and confidence scores.</span>
@@ -9903,7 +9771,7 @@ In this section, we will explore the process of conducting statistical analysis 
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-python"><pre><span></span><span class="c1">#Returns items in decreasing order by frequency, without any repetitions.</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1">#Returns items in decreasing order by frequency, without any repetitions.</span>
 <span class="k">def</span> <span class="nf">by_frequency</span><span class="p">(</span><span class="n">items</span><span class="p">:</span> <span class="n">Iterable</span><span class="p">[</span><span class="n">Any</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="n">List</span><span class="p">[</span><span class="n">Any</span><span class="p">]:</span>
 
     <span class="n">frequencies</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">()</span>
@@ -9926,7 +9794,7 @@ In this section, we will explore the process of conducting statistical analysis 
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-python"><pre><span></span><span class="c1">#Erases the words that appear in `data` from `img`.</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1">#Erases the words that appear in `data` from `img`.</span>
 <span class="k">def</span> <span class="nf">erase_words</span><span class="p">(</span><span class="n">img</span><span class="p">:</span> <span class="n">Image</span><span class="p">,</span> <span class="n">data</span><span class="p">:</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">,</span> <span class="n">scale</span><span class="p">:</span> <span class="nb">float</span> <span class="o">=</span> <span class="mi">1</span><span class="p">):</span>
     <span class="n">d</span> <span class="o">=</span> <span class="n">ImageDraw</span><span class="o">.</span><span class="n">Draw</span><span class="p">(</span><span class="n">img</span><span class="p">)</span>
     <span class="k">def</span> <span class="nf">erase_word</span><span class="p">(</span><span class="n">word</span><span class="p">):</span>
@@ -9953,7 +9821,7 @@ In this section, we will explore the process of conducting statistical analysis 
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-python"><pre><span></span><span class="c1">#Pairs strings with annotations and presents them in a human-readable format.</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1">#Pairs strings with annotations and presents them in a human-readable format.</span>
 <span class="k">def</span> <span class="nf">inline_annotations</span><span class="p">(</span><span class="n">words</span><span class="p">:</span> <span class="n">Sequence</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span> <span class="n">annotations</span><span class="p">:</span> <span class="n">Sequence</span><span class="p">[</span><span class="nb">str</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
     <span class="k">return</span> <span class="s1">' '</span><span class="o">.</span><span class="n">join</span><span class="p">(</span>
         <span class="sa">f</span><span class="s1">'</span><span class="si">{</span><span class="n">word</span><span class="si">}</span><span class="s1">-&gt;</span><span class="si">{</span><span class="n">annotation</span><span class="si">}</span><span class="s1">'</span>
@@ -9972,7 +9840,7 @@ In this section, we will explore the process of conducting statistical analysis 
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-python"><pre><span></span><span class="c1">#Returns the detected language of `text`, using the LangCode recognized by Tesseract</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1">#Returns the detected language of `text`, using the LangCode recognized by Tesseract</span>
 <span class="k">def</span> <span class="nf">detected_language</span><span class="p">(</span>
     <span class="n">text</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
     <span class="n">default</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s1">'eng'</span><span class="p">,</span>
@@ -9997,7 +9865,7 @@ In this section, we will explore the process of conducting statistical analysis 
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-python"><pre><span></span><span class="c1"># This function converts a page from a PDF document (represented as a `fitz.Page`) into an image,</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># This function converts a page from a PDF document (represented as a `fitz.Page`) into an image,</span>
 <span class="c1">#allowing for optional scaling, and returns it as a Pillow (PIL) Image object.</span>
 <span class="k">def</span> <span class="nf">image_from_page</span><span class="p">(</span><span class="n">page</span><span class="p">:</span> <span class="n">fitz</span><span class="o">.</span><span class="n">Page</span><span class="p">,</span> <span class="n">scale</span><span class="p">:</span> <span class="nb">float</span> <span class="o">=</span> <span class="mi">1</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Image</span><span class="p">:</span>
     <span class="n">pix</span> <span class="o">=</span> <span class="n">page</span><span class="o">.</span><span class="n">get_pixmap</span><span class="p">(</span><span class="n">matrix</span><span class="o">=</span><span class="n">fitz</span><span class="o">.</span><span class="n">Matrix</span><span class="p">(</span><span class="n">scale</span><span class="p">,</span> <span class="n">scale</span><span class="p">))</span>  <span class="c1"># type: ignore</span>
@@ -10018,7 +9886,7 @@ In this section, we will explore the process of conducting statistical analysis 
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-python"><pre><span></span><span class="c1">#Returns the total area (in pixels) consumed by images that appear in `page`. Does not account for overlap</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1">#Returns the total area (in pixels) consumed by images that appear in `page`. Does not account for overlap</span>
 <span class="c1">#between images, so it is possible for the total computed area to exceed the actual area of the page</span>
 <span class="k">def</span> <span class="nf">total_image_area</span><span class="p">(</span><span class="n">page</span><span class="p">:</span> <span class="n">fitz</span><span class="o">.</span><span class="n">Page</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
     <span class="k">return</span> <span class="nb">sum</span><span class="p">(</span>
@@ -10039,7 +9907,7 @@ In this section, we will explore the process of conducting statistical analysis 
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-python"><pre><span></span><span class="c1">#Returns the mean confidence by word of the OCR output given by metadata</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1">#Returns the mean confidence by word of the OCR output given by metadata</span>
 <span class="k">def</span> <span class="nf">mean_conf</span><span class="p">(</span><span class="n">metadata</span><span class="p">:</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">float</span><span class="p">:</span>
     <span class="k">if</span> <span class="n">metadata</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
         <span class="k">return</span> <span class="mi">0</span>
@@ -10058,7 +9926,7 @@ In this section, we will explore the process of conducting statistical analysis 
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-python"><pre><span></span><span class="c1"># Returns a boolean array indicating which elements of `s` are text.</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Returns a boolean array indicating which elements of `s` are text.</span>
 <span class="k">def</span> <span class="nf">is_text</span><span class="p">(</span><span class="n">s</span><span class="p">:</span> <span class="n">Iterable</span><span class="p">[</span><span class="nb">str</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="n">pd</span><span class="o">.</span><span class="n">array</span><span class="p">:</span>
     <span class="k">return</span> <span class="n">pd</span><span class="o">.</span><span class="n">array</span><span class="p">([</span>
         <span class="p">(</span><span class="nb">isinstance</span><span class="p">(</span><span class="n">text</span><span class="p">,</span> <span class="nb">str</span><span class="p">)</span> <span class="ow">and</span> <span class="p">(</span><span class="n">text</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span> <span class="o">!=</span> <span class="s1">''</span><span class="p">))</span> <span class="k">for</span> <span class="n">text</span> <span class="ow">in</span> <span class="n">s</span>
@@ -10076,7 +9944,7 @@ In this section, we will explore the process of conducting statistical analysis 
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-python"><pre><span></span><span class="c1">#Returns orientation and script data for `image`.</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1">#Returns orientation and script data for `image`.</span>
 <span class="k">def</span> <span class="nf">osd</span><span class="p">(</span><span class="n">image</span><span class="p">:</span> <span class="n">Image</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">dict</span><span class="p">:</span>
     <span class="n">s</span> <span class="o">=</span> <span class="n">pytesseract</span><span class="o">.</span><span class="n">image_to_osd</span><span class="p">(</span><span class="n">image</span><span class="p">)</span>
     <span class="n">ret</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">()</span>
@@ -10099,7 +9967,7 @@ In this section, we will explore the process of conducting statistical analysis 
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-python"><pre><span></span><span class="c1"># Returns a representation of `value` cast to the simplest possible type given its content.</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Returns a representation of `value` cast to the simplest possible type given its content.</span>
 <span class="k">def</span> <span class="nf">appropriate_type</span><span class="p">(</span><span class="n">value</span><span class="p">:</span> <span class="n">Any</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Any</span><span class="p">:</span>
     <span class="k">try</span><span class="p">:</span>
         <span class="k">return</span> <span class="nb">int</span><span class="p">(</span><span class="n">value</span><span class="p">)</span>
@@ -10121,7 +9989,7 @@ In this section, we will explore the process of conducting statistical analysis 
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-python"><pre><span></span><span class="c1"># Returns a `DataFrame` with the OCR output corresponding to `image`.</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Returns a `DataFrame` with the OCR output corresponding to `image`.</span>
 <span class="k">def</span> <span class="nf">data</span><span class="p">(</span><span class="n">image</span><span class="p">:</span> <span class="n">Image</span><span class="p">,</span> <span class="n">language</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">config</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s1">''</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">:</span>
     <span class="n">s</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">pytesseract</span><span class="o">.</span><span class="n">image_to_data</span><span class="p">(</span><span class="n">image</span><span class="p">,</span> <span class="n">lang</span><span class="o">=</span><span class="n">language</span><span class="p">,</span> <span class="n">config</span><span class="o">=</span><span class="n">config</span><span class="p">))</span>
     <span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span>  <span class="c1"># type: ignore</span>
@@ -10142,7 +10010,7 @@ In this section, we will explore the process of conducting statistical analysis 
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-python"><pre><span></span><span class="c1">#Extracts a string from the metadata table column `words` that is identical to the one generated by</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1">#Extracts a string from the metadata table column `words` that is identical to the one generated by</span>
 <span class="c1">#`pytesseract.image_to_string`. Used to avoid redundant computations.</span>
 
 <span class="k">def</span> <span class="nf">data_to_string</span><span class="p">(</span><span class="n">words</span><span class="p">:</span> <span class="n">Iterable</span><span class="p">[</span><span class="nb">str</span><span class="p">]):</span>
