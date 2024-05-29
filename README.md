@@ -1,6 +1,6 @@
 # OCR_Sumerian
-Here is the jupyter book: https://ancient-world-citation-analysis.github.io/OCR_Sumerian/
-Here is a Medium article: https://medium.com/@austinpereira6602/unearthing-the-past-the-journey-from-cuneiform-inscriptions-to-ai-translations-5948c2dccd45
+* Here is the jupyter book: https://ancient-world-citation-analysis.github.io/OCR_Sumerian/
+* Here is a Medium article: https://medium.com/@austinpereira6602/unearthing-the-past-the-journey-from-cuneiform-inscriptions-to-ai-translations-5948c2dccd45
 
 
 Welcome to the OCR (Optical Character Recognition) JupyterBook! This comprehensive guide will walk you through the fascinating world of character recognition and translation, specifically focusing on transliterating text from cuneiform scripts into modern-day English using OCR tools like Tesseract through Python.
