@@ -1,5 +1,5 @@
 # OCR_Sumerian
-
+Here is the jupyter book: https://ancient-world-citation-analysis.github.io/OCR_Sumerian/
 Here is a Medium article: https://medium.com/@austinpereira6602/unearthing-the-past-the-journey-from-cuneiform-inscriptions-to-ai-translations-5948c2dccd45
 
 
